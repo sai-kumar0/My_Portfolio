@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+header, body{
+    background-color: #413543 !important;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+/* ------------------------------------------Nav bar customization------------------------------------------ */
+
+.navbar-items a.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-items a.nav-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #e7b10a;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+
+.navbar-items a.nav-link:hover::after {
+    width: 100%;
+}
+
+           /* ------------toggle bar settings---------- */
+
+.toggler {
+    border: none !important;
+}
+
+.toggler:focus {
+    box-shadow: none !important;
+}
+
+/* ---------------------------------------home page customization--------------------------------------- */
+
+.title {
+    margin-top: 150px;
+}
+
+.img img {
+    max-width: 450px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.img .profile {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.653);
+}
+
+.title h4 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.title h4 span {
+    color: #e7b10a;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.title .suffix {
+    font-size: 15px;
+    color: #e7b10a;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.title .sub-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* -------------------------------------------------About page customization---------------------------------------- */
+
+.about .img img {
+    margin-top: 100px;
+}
+
+.about-title {
+    text-align: end;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+}
+
+.sub-title::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #e7b10a;
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.about-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-text span {
+    color: #e7b10a;
+}
+
+.title-container {
+    position: relative;
+}
+
+/* ---------------------------------------------------Skills container customization--------------------------------------- */
+
+.skills-title {
+    font-size: 28px;
+    font-weight: 600; 
+}
+
+.skills-title::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #e7b10a;
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.title-container h3 {
+    margin-bottom: 80px;
+}
+
+                    /* ---------------gallary cuatomization---------------------- */
+
+.gallary {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    row-gap: 60px;
+    column-gap: 80px;
+    padding-bottom: 50px;
+}
+
+.gallary div {
+    background-color: rgba(255, 255, 255, 0.222);
+    border-radius: 10%;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.gallary div img {
+    width: 80px;
+    height: 80px;
+}
+
+.gallary div p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* --------------------------------------------portfolio customization------------------------------------ */
+
+.portfolio-title {
+    font-size: 28px;
+    font-weight: 600;  
+}
+
+.item div img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.item div {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.222);
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.item div p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.item p a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------footer customization------------------------------------------- */
+
+.footer {
+    padding-top: 80px;
+    background-color: black;
+}
+
+             /* ------------------contact links---------------------------- */
+
+.contact-links h3{
+    font-size: 28px;
+    font-weight: 600;  
+}
+
+.contact-links p a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #e7b10a ;
+    text-decoration: none;
+}
+
+                  /* ----------Follow links------------------------- */
+
+.follow-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 !important;
+    /* max-width: 280px; */
+    align-content: center;
+    justify-content: center;
+}
+
+.follow h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.follow-links div {
+    padding: 5px;
+}
+
+.follow-links .follow-1 {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.follow-links div a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #e7b10a;
+}
+
+           /* -----------------------Form box customization------------------------ */
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+}
+
+.item1 {
+    grid-column: 1 / 3;
+}
+
+.message h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.message h3 span {
+    color: #e7b10a;
+}
+
+form p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.input-group input, .input-group textarea, .input-group span {
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    border: 3px solid #ffffff;
+    color: #ffffff !important;
+}
+
+.input-group span {
+    border-right: none;
+}
+
+.input-group input{
+    border-left: none;
+}
+
+.input-group input:focus {
+    box-shadow: none !important;
+    border-color: #ffffff !important;
+}
+
+.input-group textarea:focus {
+    box-shadow: none !important;
+    border-color: #ffffff !important;
+}
+
+/* -------------------submit and download button------------------------ */
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons .btn {
+    background-color: #e7b10a !important;
+    color: #ffffff !important;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.buttons .btn:focus {
+    box-shadow: none !important;
+}
+
+.follow-links div:hover, .contact-links p:hover, .message button:hover {
+    opacity: 0.7;
+}
+
+
+/* --------------------------------------------------Media query settings for samll screens------------------------------------ */
+
+@media screen and (max-width: 769px) {
+    .title {
+        margin-top: 30px;
+    }
+
+    .gallary {
+        gap: 30px;
+    }
+
+    .contact {
+        margin-top: 50px;
+    }
+
+    .img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about .about-img {
+        display: none;
+    } 
+
+}
+
+@media screen and (max-width: 800px) {
+    .message {
+        margin-top: 80px;
+    }
+}
+
+               /* -------------------------for mobile screens---------------------------- */
+
+@media screen and (max-width: 460px) {
+    .img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .about .title {
+        margin-top: 50px;
+    }
+
+    .gallary {
+        grid-template-columns: auto auto;
+        gap: 30px;
+    }
+
+    .portfolio-title {
+        margin-left: 15px;
+    }
+
+    .contact {
+        margin-top: 30px;
+    }
+
+    .message {
+        padding-top: 50px;
+    }
+
+    .footer, .follow {
+        padding-top: 40px;
+    }
+
+}

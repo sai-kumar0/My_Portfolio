@@ -1,343 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- -----------------------Internal CSS------------------------------------- -->
+    <!-- Internal CSS -->
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
 
-     <!---------------------Font awesome---------------------------------->
+    <!--Font awesome-->
 
-     <script src="https://kit.fontawesome.com/efdffb124b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/efdffb124b.js"
+      crossorigin="anonymous"
+    ></script>
 
-     <!-----------------------Bootstrap Css--------------------------------->
- 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
- 
-     <!-- ------------------------------Google Fonts------------------------------- -->
+    <!-- Bootstrap Css -->
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Portfolio</title>
-    <link rel="icon" href="./img/logo-2.png" type="image/icon type">
-</head>
-<body>
-
-    
-  <!-- ------------------------------------------------------------Nav bar ------------------------------------------------------------------- -->
-
+    <link rel="icon" href="./img/logo-2.png" type="image/icon type" />
+  </head>
+  <body>
+    <!-- Nav bar -->
 
     <header class="pt-2">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-lg-5 ms-md-4 ms-sm-4 ms-4" href="#">
+            <img
+              src="./img/logo-1.png"
+              alt="Logo"
+              width="90px"
+              height="120px"
+              class="d-inline-block align-text-top"
+            />
+          </a>
 
-        <nav class="navbar navbar-expand-sm">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <i class="fa-solid fa-bars-staggered" style="color: #ffffff"></i>
+          </button>
 
-          <div class="container-fluid">
-
-              <a class="navbar-brand ms-lg-5 ms-md-4 ms-sm-4 ms-4" href="#">
-                  <img src="./img/logo-1.png" alt="Logo" width="90" height="120" class="d-inline-block align-text-top">
-              </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-              <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
-            </button>
-
-            <div class="collapse navbar-collapse navbar-items" id="collapsibleNavbar">
-
-              <ul class="navbar-nav ms-auto me-lg-5 me-md-5 me-sm-4">
-                <li class="nav-item me-lg-5 me-md-4 me-sm-4 text-center">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item me-lg-5 me-md-4 me-sm-4 text-center">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item me-lg-5 me-md-4 me-sm-4 text-center">
-                  <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>    
-                <li class="nav-item me-lg-5 me-md-4 me-sm-4 text-center">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>    
-              </ul>
-
-            </div>
-
+          <div
+            class="collapse navbar-collapse navbar-items"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav ms-auto me-lg-5 me-md-5 me-sm-4">
+              <li class="nav-item me-lg-5 me-md-4 me-sm-4 text-center">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item me-lg-5 me-md-4 me-sm-4 text-center">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item me-lg-5 me-md-4 me-sm-4 text-center">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item me-lg-5 me-md-4 me-sm-4 text-center">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
-
-        </nav>
-
+        </div>
+      </nav>
     </header>
 
+    <!-- Home page  -->
 
-    <!-- ------------------------------------------------------Home page ------------------------------------------------------ -->
-
-
-    <section class="container-fluid d-flex flex-row justify-content-around flex-wrap pt-5">
-
+    <section
+      class="container-fluid d-flex flex-row justify-content-around flex-wrap pt-5"
+    >
       <div class="title col-lg-4 col-md-4 col-sm-8 col-10">
-
-        <h4><span>Hi</span> I'm </h4>
+        <h4><span>Hi</span> I'm</h4>
         <h2>Sai kumar</h2>
         <p class="suffix">< Front End Developer /></p>
-        <p class="sub-text">I am good at creating visually stunning and user-friendly websites through knowledge of latest design trends and technologies.</p>
-
+        <p class="sub-text">
+          Enthusiast- Passionate Web Developer. Anxious to tackle the next web
+          project and to work in collaboration.
+        </p>
       </div>
- 
 
-                            <!-- -----------------------portfolio img------------------------- -->
-
+      <!-- portfolio img -->
 
       <div class="img col-lg-4 col-md-5 col-sm-9 col-12 mt-3 pt-5">
-        <img src="./img/sai1.jpg" class="profile">
+        <img src="./img/sai1.jpg" class="profile" />
       </div>
-
     </section>
 
+    <!-- About page -->
 
-    <!-- -----------------------------------------------About page---------------------------------------------------------------- -->
-
-
-    <section class="container-fluid d-flex flex-row justify-content-around flex-wrap about" id="about">
-      
+    <section
+      class="container-fluid d-flex flex-row justify-content-around flex-wrap about"
+      id="about"
+    >
       <div class="img col-lg-4 col-md-5 col-sm-8 col-10 about-img">
-        <img src="./img/About me.png" class="img-fluid">
+        <img src="./img/About me.png" class="img-fluid" />
       </div>
 
       <div class="title col-lg-5 col-md-5 col-sm-8 col-10">
-
         <h3 class="about-title sub-title">About me</h3>
 
+        <!-- about me  -->
 
-
-                               <!-- -----------------------about me ------------------- -->
-
-
-
-        <p class="about-text">Hi, I'm Sai kumar, a passionate front-end developer currently
-          pursuing my <span>B-tech</span> at <span>Malla Reddy Engineering College</span>.
-          <br><br>
-          As a student, I'm constantly learning and pushing my limits
-          to stay up-to-date with the latest web development technologies.
-          My focus is on crafting beautiful user interfaces that 
-          deliver exceptional user experiences.
-          <br><br>
-          I'm excited to continue my journey as a front-end developer 
-          and am always open to new challenges and opportunities.</p>
-
+        <p class="about-text">
+          Hi, I'm Sai kumar, a passionate front-end developer currently pursuing
+          my <span>B-tech</span> at
+          <span>Malla Reddy Engineering College</span>. <br /><br />
+          As a student, I'm constantly learning and pushing my limits to stay
+          up-to-date with the latest web development technologies. My focus is
+          on crafting beautiful user interfaces that deliver exceptional user
+          experiences.
+          <br /><br />
+          I'm excited to continue my journey as a front-end developer and am
+          always open to new challenges and opportunities.
+        </p>
       </div>
-
     </section>
 
-
-    <!-- --------------------------------------------------------Skills gallary------------------------------------------------------- -->
-
+    <!-- --Skills gallary- -->
 
     <section class="container-fluid d-flex justify-content-center mt-5 skills">
-
       <div>
-
         <div class="title-container">
           <h3 class="text-center skills-title">Skills</h3>
         </div>
 
-
-                        <!-- -------------------------gallary----------------------- -->
-
+        <!-- gallary -->
 
         <div class="gallary">
-
-          <div><img src="./img/html-5.png" alt="HTML-5"><p class="text-center mt-3">HTML</p></div>
-          <div><img src="./img/css-3.png" alt="HTML-5"><p class="text-center mt-3">CSS</p></div>
-          <div><img src="./img/js.png" alt="HTML-5"><p class="text-center mt-3">JS</p></div>
-          <div><img src="./img/bootstrap.png" alt="HTML-5"><p class="text-center mt-3">Bootstrap</p></div>
-          <div><img src="./img/python.png" alt="HTML-5"><p class="text-center mt-3">Python</p></div>
-          <div><img src="./img/letter-c.png" alt="HTML-5"><p class="text-center mt-3">C</p></div>
-
+          <div>
+            <img src="./img/html-5.png" alt="HTML-5" />
+            <p class="text-center mt-3">HTML</p>
+          </div>
+          <div>
+            <img src="./img/css-3.png" alt="HTML-5" />
+            <p class="text-center mt-3">CSS</p>
+          </div>
+          <div>
+            <img src="./img/js.png" alt="HTML-5" />
+            <p class="text-center mt-3">JS</p>
+          </div>
+          <div>
+            <img src="./img/bootstrap.png" alt="HTML-5" />
+            <p class="text-center mt-3">Bootstrap</p>
+          </div>
+          <div>
+            <img src="./img/python.png" alt="HTML-5" />
+            <p class="text-center mt-3">Python</p>
+          </div>
+          <div>
+            <img src="./img/letter-c.png" alt="HTML-5" />
+            <p class="text-center mt-3">C</p>
+          </div>
         </div>
-
       </div>
-
     </section>
 
+    <!-- Portfolio projects -->
 
-    <!-- ------------------------------------------------------Portfolio projects------------------------------------------ -->
-
-    
-    <section class="container justify-content-around mt-5 portfolio pb-5" id="portfolio">
-
+    <section
+      class="container justify-content-around mt-5 portfolio pb-5"
+      id="portfolio"
+    >
       <h3 class="portfolio-title">Portfolio</h3>
 
       <div class="d-flex flex-row justify-content-around flex-wrap mt-5">
-
-
-                         <!-- -----------------------project-1---------------------------- -->
-
+        <!-- project-1 -->
 
         <div class="item mt-lg-5">
-
           <div class="d-flex align-items-center flex-column">
-
-            <img src="./img/project-1.png">
-            <p class="text-center mt-4">Landing page design <br> for the website</p>
-
+            <img src="./img/Gift Perfect.png" />
+            <p class="text-center mt-4">
+              Gift Perfect - AI recommended <br />
+              Gifts - Landing page
+            </p>
           </div>
 
-          <p class="text-center mt-3"><a href="https://www.canva.com/design/DAFfEmM7vRY/dRVgi8lHulxPDscXVFt_DA/edit?utm_content=DAFfEmM7vRY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Visit<i class="fa-solid fa-arrow-up-right-from-square fa-sm ms-2" style="color:#e7b10a;"></i></a></p>
-
+          <p class="text-center mt-3">
+            <a href="https://sai-kumar0.github.io/Gift-Perfect/" target="_blank"
+              >Visit<i
+                class="fa-solid fa-arrow-up-right-from-square fa-sm ms-2"
+                style="color: #e7b10a"
+              ></i
+            ></a>
+          </p>
         </div>
 
-
-                           <!-- -----------------------project-2---------------------------- -->
-
+        <!-- project-2 -->
 
         <div class="item">
-
           <div class="d-flex align-items-center flex-column">
-
-            <img src="./img/project-2.png">
-            <p class="text-center mt-4">Food Court - Website where you <br> can order your food online.</p>
-
+            <img src="./img/Food Court.png" />
+            <p class="text-center mt-4">
+              Food Court - Website where you <br />
+              can order your food online.
+            </p>
           </div>
 
-          <p class="text-center mt-3"><a href="https://sai-kumar0.github.io/Food-Court-P1/" target="_blank">Visit<i class="fa-solid fa-arrow-up-right-from-square fa-sm ms-2" style="color: #e7b10a;"></i></a></p>
-
+          <p class="text-center mt-3">
+            <a
+              href="https://sai-kumar0.github.io/Food-Court-P1/"
+              target="_blank"
+              >Visit<i
+                class="fa-solid fa-arrow-up-right-from-square fa-sm ms-2"
+                style="color: #e7b10a"
+              ></i
+            ></a>
+          </p>
         </div>
 
-
-                              <!-- -----------------------project-3---------------------------- -->
-
+        <!-- project-3 -->
 
         <div class="item mt-lg-5">
-
           <div class="d-flex align-items-center flex-column">
-
-            <img src="./img/project-3.png">
-            <p class="text-center mt-4">Basic calculator<br>page.</p>
-
+            <img src="./img/project-3.png" />
+            <p class="text-center mt-4">Basic calculator<br />page.</p>
           </div>
 
-          <p class="text-center mt-3"><a href="https://sai-kumar0.github.io/Calculator/" target="_blank">Visit<i class="fa-solid fa-arrow-up-right-from-square fa-sm ms-2" style="color: #e7b10a;"></i></a></p>
-
+          <p class="text-center mt-3">
+            <a href="https://sai-kumar0.github.io/Calculator/" target="_blank"
+              >Visit<i
+                class="fa-solid fa-arrow-up-right-from-square fa-sm ms-2"
+                style="color: #e7b10a"
+              ></i
+            ></a>
+          </p>
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- ----------------------------------------------Footer contact form----------------------------------------------------------------- -->
-
+    <!-- Footer contact form -->
 
     <footer class="footer" id="contact">
-
-      <div class="contact container-fluid d-flex flex-row justify-content-around flex-wrap">
-
+      <div
+        class="contact container-fluid d-flex flex-row justify-content-around flex-wrap"
+      >
         <div class="ms-lg-4 d-flex flex-column justify-content-around">
-
-
-                     <!-- -----------------------Contact links---------------------------- -->
-
+          <!-- Contact links -->
 
           <div class="contact-links">
             <h3 class="mb-5">Contact me</h3>
-            <p><a href="mailto:saichary934@gmail.com"><i class="fa-solid me-3 fa-envelope" style="color: #ffffff;"></i>saichary934@gmail.com</a></p>
-            <p><a href="tel:+919347266424"><i class="fa-solid me-3 fa-phone" style="color: #ffffff;"></i>9347266424</a></p>
+            <p>
+              <a href="mailto:saichary934@gmail.com"
+                ><i class="fa-solid me-3 fa-envelope" style="color: #ffffff"></i
+                >saichary934@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:+919347266424"
+                ><i class="fa-solid me-3 fa-phone" style="color: #ffffff"></i
+                >9347266424</a
+              >
+            </p>
           </div>
 
           <div class="follow">
-
-
-                          <!-- ---------------------Follow links---------------------------- -->
-
+            <!-- Follow links -->
 
             <h3 class="pb-4">Follow</h3>
 
             <div class="follow-links">
-              <div class="follow-1"><a href="https://www.facebook.com/saikumar.sunny.986/" target="_blank"><i class="fa-brands pe-3 fa-facebook fa-lg" style="color: #ffffff;"></i>Facebook</a></div>
-              <div><a href="https://www.linkedin.com/in/sai-kumar-19653b246" target="_blank"><i class="fa-brands pe-3 fa-linkedin fa-lg" style="color: #ffffff;"></i>Linked in</a></div>
-              <div><a href="https://www.instagram.com/sai_kumar_chary_/" target="_blank"><i class="fa-brands pe-3 fa-instagram fa-lg" style="color: #ffffff;"></i>Instagram</a></div>
-              <div class="follow-1"><a href="https://github.com/sai-kumar0" target="_blank"><i class="fa-brands pe-3 fa-github fa-lg" style="color: #ffffff;"></i>Github</a></div>
+              <div class="follow-1">
+                <a
+                  href="https://www.facebook.com/saikumar.sunny.986/"
+                  target="_blank"
+                  ><i
+                    class="fa-brands pe-3 fa-facebook fa-lg"
+                    style="color: #ffffff"
+                  ></i
+                  >Facebook</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/sai-kumar-19653b246"
+                  target="_blank"
+                  ><i
+                    class="fa-brands pe-3 fa-linkedin fa-lg"
+                    style="color: #ffffff"
+                  ></i
+                  >Linked in</a
+                >
+              </div>
+              <div>
+                <a
+                  href="https://www.instagram.com/sai_kumar_chary_/"
+                  target="_blank"
+                  ><i
+                    class="fa-brands pe-3 fa-instagram fa-lg"
+                    style="color: #ffffff"
+                  ></i
+                  >Instagram</a
+                >
+              </div>
+              <div class="follow-1">
+                <a href="https://github.com/sai-kumar0" target="_blank"
+                  ><i
+                    class="fa-brands pe-3 fa-github fa-lg"
+                    style="color: #ffffff"
+                  ></i
+                  >Github</a
+                >
+              </div>
             </div>
-
           </div>
-
         </div>
 
         <div class="message">
-
           <h3 class="mb-5 text-center">
             Have a <span>project</span> ? Let's talk
           </h3>
 
           <form>
-
-
-                         <!-- ---------------------Message Box--------------- -->
-
+            <!-- Message Box -->
 
             <p>Name</p>
             <p>Number</p>
 
             <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user" style="color: #ffffff;"></i></span>
-              <input type="text" class="form-control" id="name" placeholder="Sai kumar" aria-label="Username" aria-describedby="basic-addon1">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fa-solid fa-user" style="color: #ffffff"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Sai kumar"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
             </div>
 
             <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></span>
-              <input type="text" class="form-control" id="number" placeholder="+91 1234567890" aria-label="Username" aria-describedby="basic-addon1">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fa-solid fa-phone" style="color: #ffffff"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                id="number"
+                placeholder="+91 1234567890"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
             </div>
 
             <p class="item1">E-mail</p>
 
             <div class="input-group mb-3 item1">
-              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope" style="color: #fcfcfc;"></i></span>
-              <input type="email" class="form-control" id="email" placeholder="mailid123@gmail.com" aria-label="Username" aria-describedby="basic-addon1">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fa-solid fa-envelope" style="color: #fcfcfc"></i
+              ></span>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="mailid123@gmail.com"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
             </div>
 
             <p class="item1">Your Message</p>
 
             <div class="input-group item1">
-              <textarea class="form-control" id="message" aria-label="With textarea" rows="5" placeholder="Your message goes here. . . feel free write  :)"></textarea>
+              <textarea
+                class="form-control"
+                id="message"
+                aria-label="With textarea"
+                rows="5"
+                placeholder="Your message goes here. . . feel free to write  :)"
+              ></textarea>
             </div>
-
           </form>
 
           <div class="buttons">
-
-            <a href="./img/SaiKumar_Resume.pdf" download="./img/SaiKumar_Resume"><button type="button" class="btn">Download Resume</button></a>
+            <a
+              href="./img/SaiKumar_InternshalaResume.pdf"
+              download="./img/SaiKumar_InternshalaResume"
+              ><button type="button" class="btn">Download Resume</button></a
+            >
 
             <button type="button" class="btn" id="btn">Submit</button>
-            
           </div>
-
         </div>
-
       </div>
 
+      <!-- copyright -->
 
-                    <!-- ------------------------copyright----------------------- -->
-
-
-      <div class="text-center p-4">
-        <span><img src="./img/logo-2.png" width="50px" height="70px"></span>Copyright © All rights Cold Soul reserved
+      <div class="text-center p-4" style="font-size: 12px">
+        <span><img src="./img/logo-2.png" width="35px" height="55px" /></span
+        >Copyright © All rights Sai kumar reserved
       </div>
-
     </footer>
 
+    <!--Bootstrap Javascript -->
 
-    <!-----------------------------Bootstrap Javascript------------------------------------->
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
